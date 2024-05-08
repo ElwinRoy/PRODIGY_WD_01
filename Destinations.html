@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelX - Destinations</title>
+<style>
+/* CSS styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+}
+
+.logo img {
+  width: 50px; /* Adjusted width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.content {
+  padding: 120px 20px;
+}
+
+.destination {
+  margin-bottom: 40px;
+}
+
+.destination img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.destination-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.destination-description {
+  color: #555;
+  font-size: 16px;
+}
+
+.destination-link {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="logo"><img src="img/Logo.jpg" alt="TravelX Logo"></a>
+    TravelX
+  </div>
+</nav>
+
+<div class="content">
+  <div class="destination">
+    <img src="img/Santorini.jpg" alt="Destination 1">
+    <div class="destination-info">
+      <h2 class="destination-title">Santorini, Greece</h2>
+      <p class="destination-description">Explore the stunning island of Santorini with its iconic white buildings, breathtaking sunsets, and crystal-clear waters.  It is the largest island of a small circular archipelago, which bears the same name and is the remnant of a caldera. The island was the site of one of the largest volcanic eruptions in recorded history: the Minoan eruption (sometimes called the Thera eruption), which occurred about 3,600 years ago at the height of the Minoan civilization.The eruption left a large caldera surrounded by volcanic ash deposits hundreds of metres deep.</p>
+      
+    </div>
+  </div>
+
+  <div class="destination">
+    <img src="img/Kyoto.jpg" alt="Destination 2">
+    <div class="destination-info">
+      <h2 class="destination-title">Kyoto, Japan</h2>
+      <p class="destination-description">Discover the rich cultural heritage of Kyoto with its historic temples, traditional tea houses, and serene gardens. Kyoto is considered the cultural capital of Japan and is a major tourist destination. The agency for cultural affairs of the national government is headquartered in the city. It is home to numerous Buddhist temples, Shinto shrines, palaces and gardens, some of which have been designated collectively as a World Heritage Site by UNESCO. </p>
+      
+    </div>
+  </div>
+
+  <div class="destination">
+    <img src="img/NewYork.jpg" alt="Destination 3">
+    <div class="destination-info">
+      <h2 class="destination-title">New York City, USA</h2>
+      <p class="destination-description">Experience the vibrant energy of New York City with its iconic landmarks, world-class museums, and diverse neighborhoods. New York, often called New York City or simply NYC, is the most populous city in the United States, located at the southern tip of New York State on one of the world's largest natural harbors. The city comprises five boroughs, each of which is coextensive with a respective county. New York is a global center of finance and commerce, culture and technology,entertainment and media, academics and scientific output, and the arts and fashion, and, as home to the headquarters of the United Nations, is an important center for international diplomacy.</p>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+// JavaScript
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.style.backgroundColor = '#555'; 
+  } else {
+    navbar.style.backgroundColor = '#333';
+  }
+});
+</script>
+
+</body>
+</html>
